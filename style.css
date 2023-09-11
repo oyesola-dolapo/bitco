@@ -123,6 +123,7 @@ button{
     width: fit-content;
     bottom: 0;
     left: 0;
+    flex-wrap: wrap;
 }
 
 .partners h1{
@@ -137,6 +138,7 @@ button{
     align-items: center;
     justify-content: space-between;
     margin-left: 2.0rem;
+    
 }
 
 .partners-logo a{
@@ -159,8 +161,16 @@ button{
 
 
 @media (max-width: 1000px){
-    nav ul{
+    nav ul li{
         display: none;
+    }
+    nav ul li:last-child{
+        display: block;
+        padding: 1rem 1.5rem;
+    }
+
+    nav ul li a{
+        font-size: 1.2rem;
     }
 }
 
@@ -187,6 +197,7 @@ button{
 @media (max-width: 490px){
     .header{
         font-size: 4rem;
+        margin-top: 3rem;
     }
 
     input{
